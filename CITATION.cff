@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "We wrote up how we built and tested the skill in a blog post. If you find the skill useful in your work, please cite the post below."
+title: "schematic-figure"
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Jinchen
+  - family-names: Wright
+    given-names: Logan
+repository-code: "https://github.com/lgwrightlab/schematic-figure"
+url: "https://lgwrightlab.github.io/schematic-figure/"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Automating schematic figure making"
+  authors:
+    - family-names: Zhao
+      given-names: Jinchen
+    - family-names: Wright
+      given-names: Logan
+  journal: "lgwrightlab.github.io"
+  year: 2026
+  month: 10
+  url: "https://lgwrightlab.github.io/schematic-figure/"

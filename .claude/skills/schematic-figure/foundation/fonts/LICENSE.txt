@@ -1,0 +1,3 @@
+Latin Modern Roman and Latin Modern Math (c) GUST e-foundry, distributed under the GUST Font License
+(an instance of the LaTeX Project Public License): http://www.gust.org.pl/projects/e-foundry/licenses
+Source: CTAN fonts/lm and fonts/lm-math.

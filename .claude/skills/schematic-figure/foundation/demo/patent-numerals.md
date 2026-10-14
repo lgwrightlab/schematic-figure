@@ -1,0 +1,36 @@
+# Reference numerals: screw clamp with electronic actuator (demo/patent.js)
+
+- 10: screw clamp (assembly)
+- 12: base plate
+- 14: column
+- 16: arm
+- 18: knob
+- 20: clamping screw
+- 22: pressure pad
+- 24: mounting hole
+- 26: bolt
+- 100: control system (assembly)
+- 102: force sensor
+- 110: controller
+- 112: processor
+- 114: memory
+- 116: clamping program
+- 118: communication interface
+- 119: bus
+- 120: actuator
+- 130: power supply
+- 142: battery
+- 144: switch
+- 146: current-limiting resistor
+- 148: actuator coil
+- 150: flyback diode
+- 152: smoothing capacitor
+- 154: comparator
+- 156: ground
+- 158: input terminal
+- 200: clamping method
+- S202: close the clamp
+- S204: receive the force signal
+- S206: compare the force with the threshold
+- S208: stop the actuator
+- S210: store the clamping event

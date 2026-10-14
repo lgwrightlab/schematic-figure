@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8">
+<style>@page{margin:0}html,body{margin:0;padding:0;background:#fff}#host svg{display:block}@font-face{font-family:'Latin Modern Roman';src:url('/fonts/lmroman10-regular.otf')}@font-face{font-family:'Latin Modern Roman';font-style:italic;src:url('/fonts/lmroman10-italic.otf')}@font-face{font-family:'Latin Modern Roman';font-weight:bold;src:url('/fonts/lmroman10-bold.otf')}@font-face{font-family:'Latin Modern Math';src:url('/fonts/latinmodern-math.otf')}</style>
+<div id="host"></div>
+<script type="module">
+import * as L from './lib.js';
+const q = new URLSearchParams(location.search);
+try {
+  const mod = await import(q.get('fig') + '?v=' + q.get('v'));
+  const spec = mod.figure ?? {};
+  const F = L.createFigure(document.getElementById('host'), spec);
+  window.__F = F;
+  await mod.default(F, L);
+  await document.fonts.ready;
+  document.head.insertAdjacentHTML('beforeend', `<style>@page{size:${F.widthMM}mm ${F.heightMM}mm}</style>`);
+  window.__manifest = L.manifest(F);
+} catch (e) { window.__error = String(e && e.stack || e); }
+window.__done = true;
+</script>
